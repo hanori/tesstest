@@ -34,6 +34,7 @@
     
     Tesseract* tesseract = [[Tesseract alloc] initWithLanguage:@"eng+ita"];
     tesseract.delegate = self;
+    NSLog("test");
     
     [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"]; //limit search
     [tesseract setImage:[UIImage imageNamed:@"image_sample.jpg"]]; //image to check
